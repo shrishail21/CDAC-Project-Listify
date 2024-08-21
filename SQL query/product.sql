@@ -1,0 +1,2 @@
+
+CREATE TABLE product (product_id int PRIMARY KEY AUTO_INCREMENT,product_title VARCHAR(50) NOT NULL,product_decription VARCHAR(500) NOT NULL,price decimal(10,2) NOT NULL,listed_date DATE default CURRENT_DATE,sold_date DATE,user_id int,category_id int, FOREIGN KEY (category_id) REFERENCES category(category_id), FOREIGN KEY(user_id) REFERENCES user(user_id),image_name VARCHAR(500),created_time DATETIME default CURRENT_TIMESTAMP );

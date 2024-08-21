@@ -1,0 +1,2 @@
+
+CREATE TABLE electronics(electronics_id int PRIMARY KEY AUTO_INCREMENT,category_id int,product_id int,manufaturer VARCHAR(50),year_of_purches year,model_name VARCHAR(50),FOREIGN KEY(category_id) REFERENCES category(category_id),FOREIGN KEY(product_id) REFERENCES product(product_id));

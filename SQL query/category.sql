@@ -1,0 +1,3 @@
+
+
+CREATE TABLE category (category_id int PRIMARY KEY AUTO_INCREMENT,titel VARCHAR(100) NOT NULL,created_time  DATETIME default CURRENT_TIMESTAMP);

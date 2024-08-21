@@ -1,0 +1,2 @@
+
+CREATE TABLE vehicle (vehicle_id int PRIMARY KEY AUTO_INCREMENT,manufaturer VARCHAR(50),vehicle_type VARCHAR(50),fuel_type VARCHAR(50),model_name VARCHAR(50),manufature_date DATE,year_of_purches year,distance_covered int,product_id int,category_id int,FOREIGN KEY (product_id) REFERENCES product(product_id),FOREIGN KEY (category_id) REFERENCES category(category_id),created_time DATETIME default CURRENT_TIMESTAMP);
